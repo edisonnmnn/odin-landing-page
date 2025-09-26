@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
 }
 
-.content * {
+.content > * {
     display: flex;
     flex: 1;
 }
@@ -25,6 +25,26 @@ body {
 .header, .hero, .footer {
     background-color: #1F2937;
     color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 16px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.header-logo {
+    font-weight: bold;
 }
 
 .hero {
@@ -36,7 +56,7 @@ body {
 }
 
 .quote {
-
+    background-color: #E5E7Eb
 }
 
 
