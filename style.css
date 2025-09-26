@@ -15,17 +15,20 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
 }
+
 .top-section {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
     gap: 32px;
-    padding-left: 144px;
-    padding-right: 144px;
     flex: 1;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 64px;
 }   
 
 .header, .hero, .footer {
@@ -38,6 +41,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 16px;
+}
+
+.header, .hero {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Centers the container */
+    padding-left: 144px;
+    padding-right: 144px;
+    box-sizing: border-box;
 }
 
 ul {
@@ -65,13 +77,17 @@ ul {
     flex: 1;
 }
 
-.hero .right img {
-    max-width: 100%;   /* can’t exceed column width */
-    height: auto;      /* maintain aspect ratio */
-    display: flex;    /* remove inline spacing */
-    padding-bottom:32px;
+.hero .right {
+    display: flex;
+    justify-content: flex-end;
 }
 
+.hero .right img {
+    max-width: 90%;   /* can’t exceed column width */
+    height: auto;      /* maintain aspect ratio */
+    display: block;    /* remove inline spacing */
+    padding-bottom:32px;
+}
 .hero-main {
     font-size: 48px;
     color: #F9FAF8;
@@ -98,12 +114,55 @@ ul {
 .information {
     display: flex;
     flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    padding: 48px;
+    flex-direction: row;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.info-header {
+    display: flex;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-top: 32px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.card-wrapper p {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
 }
 
 .quote {
     display: flex;
     flex: 1;
-    background-color: #E5E7Eb
+    background-color: #E5E7EB
 }
 
 .call-to-action {
