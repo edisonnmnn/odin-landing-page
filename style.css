@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.content * {
+    display: flex;
+    flex: 1;
+}
+
+.header, .hero, .footer {
+    background-color: #1F2937;
+    color: white;
+}
+
+.hero {
+
+}
+
+.information {
+
+}
+
+.quote {
+
+}
+
+
