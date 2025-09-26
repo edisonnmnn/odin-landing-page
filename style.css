@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    padding: 
 }
 
 .content {
@@ -15,12 +16,17 @@ body {
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
+    box-sizing: border-box;
 }
-
-.content > * {
+.top-section {
     display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    gap: 32px;
+    padding-left: 144px;
+    padding-right: 144px;
     flex: 1;
-}
+}   
 
 .header, .hero, .footer {
     background-color: #1F2937;
@@ -29,8 +35,7 @@ body {
 
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 16px;
 }
@@ -45,18 +50,64 @@ ul {
 
 .header-logo {
     font-weight: bold;
+    font-size: 24px;
 }
 
 .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.hero .left,
+.hero .right {
+    flex: 1;
+}
+
+.hero .right img {
+    max-width: 100%;   /* can’t exceed column width */
+    height: auto;      /* maintain aspect ratio */
+    display: flex;    /* remove inline spacing */
+    padding-bottom:32px;
+}
+
+.hero-main {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.sign-up {
+    background-color: #3882F6;
+    color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    margin-top: 12px;
 
 }
 
 .information {
-
+    display: flex;
+    flex: 1;
 }
 
 .quote {
+    display: flex;
+    flex: 1;
     background-color: #E5E7Eb
 }
 
+.call-to-action {
+    display: flex; 
+    flex: 1;
+}
 
