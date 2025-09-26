@@ -102,12 +102,13 @@ ul {
 .sign-up {
     background-color: #3882F6;
     color: white;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 10px;
     margin-top: 12px;
+    font-weight: 800;
 
 }
 
@@ -117,6 +118,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 32px;
 }
 
 .information .container {
@@ -163,7 +165,7 @@ ul {
     display: flex;
     flex: 1;
     background-color: #E5E7EB;
-    padding: 72px;
+    padding: 96px;
 }
 
 .quote-section .container {
